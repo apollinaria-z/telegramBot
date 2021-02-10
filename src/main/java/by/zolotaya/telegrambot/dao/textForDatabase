@@ -1,0 +1,16 @@
+CREATE DATABASE citydb;
+DROP TABLE citytable;
+CREATE TABLE citytable(
+            id SERIAL PRIMARY KEY,
+            name VARCHAR(50) NOT NULL,
+            description VARCHAR(300) NOT NULL
+         );
+INSERT INTO citytable (name, description)
+             VALUES('Minsk','You should definitely go to the Trinity Suburb, walk along Zybitskaya Street and go to the Central cafe to drink tea with Dream cake at the counter.'),
+                   ('Moscow','Places to visit - Red Square, Planetarium, Moscow-City observation platform.'),
+                   ('Barcelona','Places to visit - Park Guell, Sagrada Familia, La Rambla street.'),
+                   ('Lisbon','First you must see the tower of Torri di Belen, then the Castle of St. George and the Palace of Queluz.'),
+                   ('Rome','Rome has the highest density of attractions per square meter. You just need to walk in the center and look around.'),
+                   ('Berlin','The main attractions are the Reichstag Building, Brandenburg Gate, Museum Island and of course the Berlin Wall.'),
+                   ('Milan','Places to visit - Plazza Duomo, Navigli region and Porta Ticinese.');
+

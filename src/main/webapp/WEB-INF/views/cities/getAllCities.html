@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>all cities</title>
+</head>
+<body>
+
+<div th:each="city : ${cities}">
+    <a th:href="@{/cities/{id}(id=${city.getId()})}"
+       th:text="${city.getId() + '. ' + city.getName()}">city</a>
+</div>
+
+<br/>
+<hr/>
+<a href="/cities/new">Create new city description</a>
+
+</body>
+</html>
